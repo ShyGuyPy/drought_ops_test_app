@@ -187,7 +187,10 @@ tabPanel("Situational Awareness",
                      height = 220,
                      htmlOutput(outputId="MD_title"),
                      box(
-                       leafletOutput("mymap", height =140, width =300)
+                       tags$img(alt="Drought Status Map:2019-05-31",
+                                src= "https://mde.maryland.gov/programs/Water/droughtinformation/Currentconditions/PublishingImages/DroughtGraphsStarting2019jan31/Drought2019-05-31.png",
+                                style="width:250px;height:200px;border:0;")
+                       #leafletOutput("mymap", height =140, width =300)
                      ),
                      box(
                        htmlOutput(outputId = "boxes")
@@ -198,6 +201,17 @@ tabPanel("Situational Awareness",
                      title = NULL,#"VIRGINIA DROUGHT STATUS",
                      width = NULL,#6,
                      height = 220,
+                    
+                     #virginia map linked to url...needs to be fitted and ui elements need to 
+                     #be pared down...need Cherie's input so it's commented out for now
+                     
+                     # box(
+                     #   tags$img(alt="Drought Status Map:2019-05-31",
+                     #            src= "https://deq1.bse.vt.edu/drought/state/images/maps/imageMapFile15627929031512.png",  
+                     #            style="width:200px;height:200px;border:0;")
+                     # ),
+                     
+                     
                      htmlOutput(outputId = "boxes2")
                    )
                    #"NoVa: Drought Watch; Shenandoah: Drought Emergency")
