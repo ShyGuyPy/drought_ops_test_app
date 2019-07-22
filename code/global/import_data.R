@@ -66,4 +66,16 @@ state.drought.df <- data.table::fread(paste(ts_path, "state_drought_status.csv",
                 region_md_cent, region_md_west
                 )
 
+
+###added from Zach's 2018 drought app
+#------------------------------------------------------------------------------
+# Import variable lag-k reference table.
+klag.df <- data.table::fread("data/parameters/k_lag.csv", data.table = FALSE) %>% 
+  rename_all(tolower) %>% 
+  mutate(site = tolower(site))# %>% 
+#  select(-lag) %>% # REMOVE in WHEN MORE GAGES ADDED**********************************************************
+#  rename(lag = lag_to_lfall) # REMOVE in WHEN MORE GAGES ADDED************************************************
+#------------------------------------------------------------------------------
+
+
                                         
