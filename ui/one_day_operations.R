@@ -26,7 +26,9 @@ tabPanel("One-Day Operations",
            dashboardBody(
              align = "center",
              plotOutput("odo", height = plot.height, width = plot.width),
-             br()
+             br(),
+             ###added from zach 2018
+             source("ui/wellpanel_ui.R", local = TRUE)$value
            )
            
          ) # end of dashboardPage

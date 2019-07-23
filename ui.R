@@ -28,6 +28,7 @@ shinyUI(navbarPage(title = tags$a("", href = "https://docs.google.com/document/d
                    source("ui/ten_day_operations.R", local = TRUE)$value,
                    source("ui/long_term_operations.R", local = TRUE)$value,
                    source("ui/download_and_visualize.R", local = TRUE)$value
+
                     
 
 

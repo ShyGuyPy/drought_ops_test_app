@@ -123,3 +123,8 @@ western_region_t <- spTransform(western_dslv, CRS("+init=epsg:4326"))
 
 
 
+###added from Zach 2018
+source("code/functions/gen_plots_func.R", local = TRUE)
+source("code/functions/variable_lagk_func.R", local = TRUE)
+
+
